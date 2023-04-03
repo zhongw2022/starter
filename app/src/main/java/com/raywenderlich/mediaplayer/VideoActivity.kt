@@ -34,7 +34,6 @@
 
 package com.raywenderlich.mediaplayer
 
-import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Build
@@ -141,18 +140,6 @@ class VideoActivity : AppCompatActivity(), SurfaceHolder.Callback, SeekBar.OnSee
       }
       else -> super.onOptionsItemSelected(item)
     }
-  }
-
-  // Invoked when a video is selected from the gallery
-  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-    super.onActivityResult(requestCode, resultCode, data)
-    //TODO(10): Add the code that will get executed when the video is selected from gallery
-  }
-
-  // Release the media player resources when activity gets destroyed
-  override fun onDestroy() {
-    super.onDestroy()
-    //TODO(11): Add the code that will get executed when the activity gets destroyed
   }
 
   //TODO(3): Create extension properties to get the media player total duration and current duration in seconds
